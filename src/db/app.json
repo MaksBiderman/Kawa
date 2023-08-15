@@ -4,7 +4,7 @@
       "id": "1",
       "title": "01. LA LAGARTIJA",
       "description": "Mysterious and teacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
-      "image": "images/coffee-1",
+      "image": "coffee-1",
       "roasting": "5/10",
       "intensity": "6/10"
     },
@@ -12,7 +12,7 @@
       "id": "2",
       "title": "02. EL TIGRE",
       "description": "Mysterious and teacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
-      "image": "images/coffee-2",
+      "image": "coffee-2",
       "roasting": "8/10",
       "intensity": "9/10"
     },
@@ -20,7 +20,7 @@
       "id": "3",
       "title": "03. LA CUCARACHA",
       "description": "Mysterious and teacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
-      "image": "images/coffee-1",
+      "image": "coffee-3",
       "roasting": "3/10",
       "intensity": "7/10"
     } 
