@@ -25,44 +25,50 @@
       <a href="#contact">Contact</a>
     </div>
   </header>
-  <section id="home-section">
+  <section  class="home-section" id="home-section">
     <div class="container">
-      <h2>Home of original taste</h2>
+      <h2 class="section-title">Home of original taste</h2>
       <p>discover</p>
-      <a href="#discover"><i class='icon-arrow'></i></a>
+      <a href="#discover"><i class="icon-arrow"></i></a>
     </div>
   </section>
   <section id="products-section">
     <div class="container" id="products-container">
+      <h3 class="section-title">PRODUCTS</h3>
 
     </div>
 
   </section>
-  <section id="about-section">
+  <section id="about-section" class="about-section">
     <div class="container">
-      <h3>About us</h3>
-      <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
+      <h3 class="section-title">About us</h3>
+      <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something
+        original.</p>
       <p>Our coffee reflect us - young, wild and free. We are on the journey of new tastes...</p>
       <p> join us!</p>
 
     </div>
 
   </section>
-  <section id="contact-section">
+  <section id="contact-section" class="contact-section">
     <div class="container">
-      <h3>Contact us</h3>
+      <h3 class="section-title">Contact us</h3>
       <form>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
+
         <label for="title">Title</label>
         <input type="text" id="title" name="title">
+
         <label for="message">Message</label>
         <textarea id="message" name="message" required></textarea>
-        <input type="submit" value="Submit">
+
+        <button type="submit">SUBMIT</button>
       </form>
+
     </div>
   </section>
-  
+
   <footer>
     <p> 2023 El TIGRE Inc.</p>
   </footer>
@@ -76,19 +82,19 @@
       </div>
   
       <div class="col-md-8">
-        <header class="product__header">
+        <div class="product__header">
           <h3 class="product__name no-spacing">{{ title }} <i class="fas fa-chevron-down product__icon"></i></h3>
-        </header>
+        </div>
         <div class="product__description">
           <p>{{ description }}</p>
         </div>
         <ul class="product__params">
           <li>
-            <h3 class="product__params-title">Roasting</h3>
+            <h4 class="product__params-title">Roasting</h4>
             <p>{{ roasting }}</p>
           </li>
           <li>
-            <h3 class="product__params-title">Intensity</h3>
+            <h4 class="product__params-title">Intensity</h4>
             <p>{{ intensity }}</p>
           </li>
         </ul>
@@ -96,8 +102,8 @@
   
     </article>
   </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-<script src="js/app.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="js/app.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,89 @@
+/* Global */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+  background-color: $color-dark;
+  color: $color-light;
+}
+header h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* SEKCJE */
+
+/* Home-section */
+.home-section {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $color-main;
+  text-align: center;
+}
+/* About-section */
+
+.about-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/about-us.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $color-main;
+  text-align: center;
+}
+.about-section p {
+  color: $color-light;
+}
+.contact-section {
+  background-color: $color-light;
+  padding: 40px 0;
+  text-align: center;
+}
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.contact-section button {
+  color: $color-light;
+  background-color: $color-main;
+  border-color: $color-main;
+}
+/* section-title */
+.section-title {
+  text-align: center;
+  font-size: 50px;
+}
+h2 {
+  font-size: 100px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/* Pseudoelementy */
+h3 {
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 200px; 
+  height: 3px; 
+  background-color: $color-main; 
+  margin-top: 8px; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
