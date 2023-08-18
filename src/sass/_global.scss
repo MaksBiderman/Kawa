@@ -5,85 +5,285 @@
   box-sizing: border-box;
 }
 
-/* Header */
-
-header {
-  background-color: $color-dark;
-  color: $color-light;
-}
-header h1 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
 /* SEKCJE */
 
-/* Home-section */
-.home-section {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: $color-main;
-  text-align: center;
-}
-/* About-section */
-
-.about-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/about-us.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: $color-main;
-  text-align: center;
-}
-.about-section p {
-  color: $color-light;
-}
-.contact-section {
-  background-color: $color-light;
-  padding: 40px 0;
-  text-align: center;
-}
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.contact-section button {
-  color: $color-light;
-  background-color: $color-main;
-  border-color: $color-main;
-}
 /* section-title */
 .section-title {
   text-align: center;
   font-size: 50px;
 }
+
+/* Home-section */
+.home-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $color-main;
+  text-align: center;
+}
+
+.home-section h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-top: 10px;
+  color: $color-light;
+  font-family: $font-semibold;
+}
+
+.home-section h2 {
+  text-align: left;
+  color: $color-light;
+  font-size: 12px;
+  font-family: $font-regular;
+}
+
+.home-section .nav-bar {
+  padding-top: 20px;
+}
+
+.home-section .nav-bar a {
+  color: grey;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: color 0.3s;
+  font-family: $font-regular;
+}
+
+.home-section .nav-bar a:hover {
+  color: $color-main;
+}
+
+.title-space {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.title-space h3 {
+  margin: 0;
+}
+
+.title-space .section-title {
+  margin-top: 10px;
+}
+
+.title-space .title-1 {
+  text-align: left;
+  padding-left: 150px;
+  font-size: 80px;
+  font-family: $font-bold;
+}
+
+.title-space .title-2 {
+  text-align: right;
+  font-size: 80px;
+  padding-right: 50px;
+  margin-top: 0;
+  font-family: $font-bold;
+}
+
+.title-space p {
+  margin-top: 200px;
+  font-size: 30px;
+  color: $color-light;
+  font-family: $font-regular;
+}
+
+.icon-arrow {
+  color: $color-light;
+  font-size: 20px;
+}
+
+.dot {
+  font-size: 0px;
+}
+
+/* About-section */
+
+.about-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/about-us.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: $color-main;
+  text-align: center;
+}
+.about-section h3 {
+  padding-top: 30px;
+  font-family: $font-bold;
+}
+
+.about-section p {
+  color: $color-light;
+  font-size: 25px;
+  font-family: $font-regular;
+
+}
+.about-section .p1 {
+  padding-top: 80px;
+}
+.about-section .p3 {
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 70px;
+}
+.about-section .p4 {
+  padding-bottom: 70px;
+}
+ /* Contact section */
+
+
+.contact-section {
+  background-color: $color-light;
+  padding: 40px 0;
+  text-align: center;
+}
+.contact-section h3 {
+  padding-bottom: 40px;
+  font-family: $font-bold;
+  color: $color-main
+}
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-regular;
+}
+.contact-section form label {
+  padding: 15px 0;
+}
+
+.contact-section button {
+  margin-top: 15px;
+  color: $color-light;
+  background-color: $color-main;
+  border-color: $color-main;
+}
+/* Product-section */
+.products-section h3 {
+  font-family: $font-bold;
+  color: $color-main;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.product__images img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+.products-section h1 {
+  font-family: $font-bold;
+}
+.product__description {
+  font-size: 15px;
+  font-family: $font-regular;
+  padding-left: 120px;
+}
+.product__params-title {
+  font-family: $font-semibold;
+  color: $color-dark;
+  font-size: 20px;
+}
+.param {
+  color: $color-main;
+}
+.product__params {
+  padding-top: 50px;
+}
+.product__params li {
+  list-style: none;
+}
+.product.reverse {
+  flex-direction: row-reverse;
+}
+
+.product.reverse .product__images {
+  order: 2;
+}
+
+.product.reverse .product__description {
+  order: 1;
+  padding-left: 0;
+  padding-right: 120px;
+  text-align: right;
+}
+.product.reverse h1 {
+  text-align: right;
+}
+article {
+  padding-bottom: 30px;
+}
+
+
 h2 {
   font-size: 100px;
 }
+
 /* Footer */
 footer {
   text-align: center;
   font-size: 15px;
   margin-top: 20px;
+  font-family: $font-regular;
 }
 
 /* Pseudoelementy */
 h3 {
   position: relative;
 }
+
 .section-title::after {
   content: "";
   display: block;
-  width: 200px; 
-  height: 3px; 
-  background-color: $color-main; 
-  margin-top: 8px; 
+  width: 400px;
+  height: 3px;
+  background-color: $color-main;
+  margin-top: 8px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+.section-title-2::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background-color: $color-main;
+  margin-top: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products-section h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: $color-main;
+  margin-top: 37px;
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+}
+.product.reverse h1::after {
+  left: 45%;
+}
+/*8 Media */
+
+@media (max-width: 770px) {
+  .products-section h1::after {
+    display: none; 
+  }
+  .home-section .nav-bar {
+    justify-content: center; 
+  }
+  .product.reverse h1 {
+    text-align: left;
+  }
 }

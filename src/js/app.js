@@ -78,6 +78,7 @@ const app = {
     const thisApp = this;
     thisApp.initData();
     thisApp.initPages();
+
   },
 };
 

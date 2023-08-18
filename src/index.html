@@ -16,23 +16,30 @@
 </head>
 
 <body>
-  <header>
+  <section class="home-section" id="home-section">
     <div class="container">
-      <h1>El Tigree </h1>
-      <p>venezuela coffee beans</p>
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>EL TIGRE</h1>
+          <h2>VENEZUELA COFFEE BEANS</h2>
+        </div>
+        <div class="col-md-6">
+          <div class="nav-bar">
+            <a href="#home">HOME</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-  <section  class="home-section" id="home-section">
-    <div class="container">
-      <h2 class="section-title">Home of original taste</h2>
-      <p>discover</p>
-      <a href="#discover"><i class="icon-arrow"></i></a>
+    <div class="container title-space">
+      <h3 class="title-1">HOME OF</h3>
+      <h3 class="title-2 section-title-2"> ORIGINAL TASTE</h3>
+      <p>DISCOVER</p>
+      <a href="#discover"><span class="dot">a</span><i class="icon-arrow"></i></a>
     </div>
   </section>
-  <section id="products-section">
+  <section id="products-section" class="products-section">
     <div class="container" id="products-container">
       <h3 class="section-title">PRODUCTS</h3>
 
@@ -41,26 +48,28 @@
   </section>
   <section id="about-section" class="about-section">
     <div class="container">
-      <h3 class="section-title">About us</h3>
-      <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something
-        original.</p>
-      <p>Our coffee reflect us - young, wild and free. We are on the journey of new tastes...</p>
-      <p> join us!</p>
+      <h3 class="section-title">ABOUT US</h3>
+      <p class="p1">Who are we? Just a bunch of friends with</p>
+      <p>a love for a good coffee and desire to create</p>
+      <p class="p4"> something new, something original.</p>
+      <p class="p2">Our coffee reflect us - young, wild and free.</p>
+      <p> We are on the journey of new tastes...</p>
+      <p class="p3"> Join us!</p>
 
     </div>
 
   </section>
   <section id="contact-section" class="contact-section">
     <div class="container">
-      <h3 class="section-title">Contact us</h3>
+      <h3 class="section-title">CONTACT US</h3>
       <form>
-        <label for="name">Name</label>
+        <label for="name">NAME</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="title">Title</label>
+        <label for="title">TITLE</label>
         <input type="text" id="title" name="title">
 
-        <label for="message">Message</label>
+        <label for="message">MESSAGE</label>
         <textarea id="message" name="message" required></textarea>
 
         <button type="submit">SUBMIT</button>
@@ -73,29 +82,27 @@
     <p> 2023 El TIGRE Inc.</p>
   </footer>
   <script id="template-menu-product" type="text/x-handlebars-template">
-    <article class="product row">
+    <article class="product row {{#if reverse}}reverse{{/if}}">
   
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="product__images">
           <img src="images/{{ image }}.png" alt="{{ title }}">
         </div>
       </div>
   
-      <div class="col-md-8">
+      <div class="col-md-6">
         <div class="product__header">
-          <h3 class="product__name no-spacing">{{ title }} <i class="fas fa-chevron-down product__icon"></i></h3>
+          <h1 class="product__name no-spacing">{{ title }}</h1>
         </div>
         <div class="product__description">
           <p>{{ description }}</p>
         </div>
         <ul class="product__params">
           <li>
-            <h4 class="product__params-title">Roasting</h4>
-            <p>{{ roasting }}</p>
+            <h4 class="product__params-title">ROASTING: <span class="param">{{ roasting }}</span></h4>
           </li>
           <li>
-            <h4 class="product__params-title">Intensity</h4>
-            <p>{{ intensity }}</p>
+            <h4 class="product__params-title">INTENSITY: <span class="param">{{ intensity }}</span></h4>
           </li>
         </ul>
       </div>
