@@ -1,0 +1,19 @@
+/* section-title */
+.section-title {
+  text-align: center;
+  font-size: 50px;
+}
+.title-space .title-1 {
+  text-align: left;
+  padding-left: 150px;
+  font-size: 80px;
+  font-family: $font-bold;
+}
+
+.title-space .title-2 {
+  text-align: right;
+  font-size: 80px;
+  padding-right: 50px;
+  margin-top: 0;
+  font-family: $font-bold;
+}

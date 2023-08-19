@@ -4,3 +4,211 @@
   width: 70%;
   margin: 0 auto;
 }
+/* Home-section */
+.home-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $color-main;
+  text-align: center;
+}
+
+.home-section h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-top: 10px;
+  color: $color-light;
+  font-family: $font-semibold;
+}
+
+.home-section h2 {
+  text-align: left;
+  color: $color-light;
+  font-size: 12px;
+  font-family: $font-regular;
+}
+
+.home-section .nav-bar {
+  padding-top: 20px;
+}
+
+.home-section .nav-bar a {
+  color: grey;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: color 0.3s;
+  font-family: $font-regular;
+}
+
+.home-section .nav-bar a:hover {
+  color: $color-main;
+}
+
+.title-space {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.title-space h3 {
+  margin: 0;
+}
+
+.title-space .section-title {
+  margin-top: 10px;
+}
+
+
+
+.title-space p {
+  margin-top: 200px;
+  font-size: 30px;
+  color: $color-light;
+  font-family: $font-regular;
+}
+
+.icon-arrow {
+  color: $color-light;
+  font-size: 20px;
+}
+
+.dot {
+  font-size: 0px;
+}
+
+/* About-section */
+
+.about-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/about-us.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: $color-main;
+  text-align: center;
+}
+
+.about-section h3 {
+  padding-top: 30px;
+  font-family: $font-bold;
+}
+
+.about-section p {
+  color: $color-light;
+  font-size: 25px;
+  font-family: $font-regular;
+
+}
+
+.about-section .p1 {
+  padding-top: 80px;
+}
+
+.about-section .p3 {
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 70px;
+}
+
+.about-section .p4 {
+  padding-bottom: 70px;
+}
+/* Contact section */
+
+
+.contact-section {
+  background-color: $color-light;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-section h3 {
+  padding-bottom: 40px;
+  font-family: $font-bold;
+  color: $color-main;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-regular;
+}
+
+.contact-section form label {
+  padding: 15px 0;
+}
+
+.contact-section button {
+  margin-top: 15px;
+  color: $color-light;
+  background-color: $color-main;
+  border-color: $color-main;
+}
+/* Product-section */
+.products-section h3 {
+  font-family: $font-bold;
+  color: $color-main;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.product__images img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.products-section h1 {
+  font-family: $font-bold;
+}
+
+.product__description {
+  font-size: 15px;
+  font-family: $font-regular;
+  padding-left: 120px;
+}
+
+.product__params-title {
+  font-family: $font-semibold;
+  color: $color-dark;
+  font-size: 20px;
+}
+
+.param {
+  color: $color-main;
+}
+
+.product__params {
+  padding-top: 50px;
+}
+
+.product__params li {
+  list-style: none;
+}
+
+.product.reverse {
+  flex-direction: row-reverse;
+}
+
+.product.reverse .product__images {
+  order: 2;
+}
+
+.product.reverse .product__description {
+  order: 1;
+  padding-left: 0;
+  padding-right: 120px;
+  text-align: right;
+}
+
+.product.reverse h1 {
+  text-align: right;
+}
+.laur {
+  padding-left: 250px;
+}
