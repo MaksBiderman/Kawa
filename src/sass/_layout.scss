@@ -1,9 +1,8 @@
-
-
 .container {
   width: 70%;
   margin: 0 auto;
 }
+
 /* Home-section */
 .home-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/background.png');
@@ -62,8 +61,6 @@
   margin-top: 10px;
 }
 
-
-
 .title-space p {
   margin-top: 200px;
   font-size: 30px;
@@ -117,6 +114,7 @@
 .about-section .p4 {
   padding-bottom: 70px;
 }
+
 /* Contact section */
 
 
@@ -149,6 +147,7 @@
   background-color: $color-main;
   border-color: $color-main;
 }
+
 /* Product-section */
 .products-section h3 {
   font-family: $font-bold;
@@ -209,6 +208,10 @@
 .product.reverse h1 {
   text-align: right;
 }
+
 .laur {
   padding-left: 250px;
 }
+
+/* Media */
+

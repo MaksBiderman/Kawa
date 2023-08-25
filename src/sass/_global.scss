@@ -14,6 +14,15 @@ article {
 h2 {
   font-size: 100px;
 }
+.prolaur {
+  position: relative;
+}
+.laur {
+  position: absolute;
+  max-width: 400px; /* Maksymalna szerokość obrazu */
+  top: 350px;
+  right: 50px;
+}
 
 /* Footer */
 footer {
@@ -68,6 +77,29 @@ h3 {
   left: 45%;
 }
 /* Media */
+@media (max-width: 1160px){
+  .laur{
+  max-width: 320px;
+  left: 150px;
+  top: 250px;
+  }
+}
+
+@media (max-width: 964px){
+  .laur{
+    max-width: 320px;
+    left: 100px;
+    top: 250px;
+  }
+}
+@media (max-width: 854px){
+  .laur{
+  max-width: 320px;
+  left: 70px;
+  top: 300px;
+  }
+}
+
 
 @media (max-width: 770px) {
   .products-section h1::after {
@@ -81,10 +113,46 @@ h3 {
   .product.reverse h1 {
     text-align: left;
   }
+
   .about-section p {
     font-size: 20px;
   }
+}
+
+@media (max-width: 767px) {
   .laur {
-    padding-left: 50px;
+    top: 700px;
+    left: 100px
+  }
+
+}
+@media (max-width: 657px) {
+  .laur {
+    top: 650px;
+    left: 30px
+  }
+
+}
+@media (max-width: 560px) {
+  .laur {
+    top: 620px;
+    right: 100px;
+  }
+  .about-section p {
+    font-size: 15px;
+  }
+
+}
+@media (max-width: 476px) {
+  .laur {
+    top: 600px;
+    right: 300px;
+  }
+
+}
+@media (max-width: 428px){
+  .laur {
+    display: none;
   }
 }
+

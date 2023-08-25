@@ -3,6 +3,7 @@
   text-align: center;
   font-size: 50px;
 }
+
 .title-space .title-1 {
   text-align: left;
   padding-left: 150px;
@@ -16,4 +17,14 @@
   padding-right: 50px;
   margin-top: 0;
   font-family: $font-bold;
+}
+/* Media */
+
+@media (max-width:1026px){
+  .title-space .title-1{
+    font-size: 40px;
+  }
+  .title-space .title-2{
+    font-size: 40px;
+  }
 }
